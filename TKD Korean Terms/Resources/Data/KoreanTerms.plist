@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>beltLevels</key>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>00_White</string>
+			<key>level</key>
+			<integer>0</integer>
+			<key>name</key>
+			<string>Korean Terms #1</string>
+			<key>beltLevel</key>
+			<string>White</string>
+			<key>categories</key>
+			<array>
+				<dict>
+					<key>category</key>
+					<string>General Terms</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Uniform</string>
+							<key>kr</key>
+							<string>Dobok</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Belt</string>
+							<key>kr</key>
+							<string>Dee</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Commands</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Attention</string>
+							<key>kr</key>
+							<string>Cha-Ryot</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Bow</string>
+							<key>kr</key>
+							<string>Kyong Ye</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Bow to the Master</string>
+							<key>kr</key>
+							<string>Sabum-Nim Kae Kyong Ye</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Counting</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>One</string>
+							<key>kr</key>
+							<string>Hana</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Two</string>
+							<key>kr</key>
+							<string>Dul</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Three</string>
+							<key>kr</key>
+							<string>Set</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Four</string>
+							<key>kr</key>
+							<string>Net</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Five</string>
+							<key>kr</key>
+							<string>Dasot</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Six</string>
+							<key>kr</key>
+							<string>Yuhsot</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Seven</string>
+							<key>kr</key>
+							<string>Ilgop</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Eight</string>
+							<key>kr</key>
+							<string>Yodol</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Nine</string>
+							<key>kr</key>
+							<string>Ahope</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Ten</string>
+							<key>kr</key>
+							<string>Yul</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Techniques</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Front Snap Kick</string>
+							<key>kr</key>
+							<string>Ap Chagi</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Roundhouse Kick</string>
+							<key>kr</key>
+							<string>Dol Yo Chagi</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Courtesy Phrases</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Thank You</string>
+							<key>kr</key>
+							<string>Kam Sahm Needa</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>01_Yellow</string>
+			<key>level</key>
+			<integer>1</integer>
+			<key>name</key>
+			<string>Korean Terms #2</string>
+			<key>beltLevel</key>
+			<string>Yellow</string>
+			<key>categories</key>
+			<array>
+				<dict>
+					<key>category</key>
+					<string>General Terms</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>School</string>
+							<key>kr</key>
+							<string>Dojang</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Form</string>
+							<key>kr</key>
+							<string>Poomse</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Commands</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Ready</string>
+							<key>kr</key>
+							<string>Joonbi</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Bow to the Instructor</string>
+							<key>kr</key>
+							<string>Suhn-Bae Nim Kae Kyoong Ye</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Bow to the Flags</string>
+							<key>kr</key>
+							<string>Kukiae Dae Hiyo Kyong Ye</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Techniques</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Forward Stance</string>
+							<key>kr</key>
+							<string>Up Goobi</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Side Kick</string>
+							<key>kr</key>
+							<string>Yop Chagi</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Courtesy Phrases</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>You&apos;re Welcome</string>
+							<key>kr</key>
+							<string>Chun Mahn Aeyo</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>02_GreenStripe</string>
+			<key>level</key>
+			<integer>2</integer>
+			<key>name</key>
+			<string>Korean Terms #3</string>
+			<key>beltLevel</key>
+			<string>Green Stripe</string>
+			<key>categories</key>
+			<array>
+				<dict>
+					<key>category</key>
+					<string>General Terms</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Sparring</string>
+							<key>kr</key>
+							<string>Gyoroogi</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Commands</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Return (to Relax)</string>
+							<key>kr</key>
+							<string>Baro</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>At Ease</string>
+							<key>kr</key>
+							<string>Sheer</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Techniques</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Back Stance</string>
+							<key>kr</key>
+							<string>Dwee Goobi</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Horse Riding Stance</string>
+							<key>kr</key>
+							<string>Choo Choom Sogi</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Courtesy Phrases</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Hello</string>
+							<key>kr</key>
+							<string>Anyong Ha Shim Neeka</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Good to see you</string>
+							<key>kr</key>
+							<string>Bangap Seumnida</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>03_Green</string>
+			<key>level</key>
+			<integer>3</integer>
+			<key>name</key>
+			<string>Korean Terms #4</string>
+			<key>beltLevel</key>
+			<string>Green Belt</string>
+			<key>categories</key>
+			<array>
+				<dict>
+					<key>category</key>
+					<string>General Terms</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>One-Step Sparring</string>
+							<key>kr</key>
+							<string>Ilsushik</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Breaking</string>
+							<key>kr</key>
+							<string>Kyukpa</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Commands</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Start</string>
+							<key>kr</key>
+							<string>Sheejak</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Finish</string>
+							<key>kr</key>
+							<string>Keumahn</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Techniques</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Body Block</string>
+							<key>kr</key>
+							<string>Momtong Maki</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Down Block</string>
+							<key>kr</key>
+							<string>Arrae Maki</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Face Block</string>
+							<key>kr</key>
+							<string>Olgool Maki</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Courtesy Phrases</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Excuse Me</string>
+							<key>kr</key>
+							<string>Shil Ray Hamnida</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>I&apos;m Sorry</string>
+							<key>kr</key>
+							<string>Me Ahn Hamnida</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>icon</key>
+			<string>04_BlueStripe</string>
+			<key>level</key>
+			<integer>4</integer>
+			<key>name</key>
+			<string>Korean Terms #5</string>
+			<key>beltLevel</key>
+			<string>Blue Stripe</string>
+			<key>categories</key>
+			<array>
+				<dict>
+					<key>category</key>
+					<string>General Terms</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Self-Defense</string>
+							<key>kr</key>
+							<string>Ho Shin Sool</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Warmup Exercise</string>
+							<key>kr</key>
+							<string>Joonbi Woondong</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Commands</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Turn Around</string>
+							<key>kr</key>
+							<string>Dweero Dora</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Switch Feet</string>
+							<key>kr</key>
+							<string>Bal Kyo Dae</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Techniques</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Face Punch</string>
+							<key>kr</key>
+							<string>Olgool Jilugi</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Middle Punch</string>
+							<key>kr</key>
+							<string>Momtong Jilugi</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>category</key>
+					<string>Courtesy Phrases</string>
+					<key>terms</key>
+					<array>
+						<dict>
+							<key>en</key>
+							<string>Goodbye (to one leaving)</string>
+							<key>kr</key>
+							<string>Ahnyonghee Ka Ship Sheeyo</string>
+						</dict>
+						<dict>
+							<key>en</key>
+							<string>Goodbye (to one staying)</string>
+							<key>kr</key>
+							<string>Ahnyonghee Kay Ship Sheeyo</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

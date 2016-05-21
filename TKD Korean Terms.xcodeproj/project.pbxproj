@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */; };
+		4BA909FF7E156DE6F8A0048F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90C9CC82405BA47EA2B98 /* Main.storyboard */; };
+		4BA90A9905B4D7F902BC4365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */; };
+		55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95D2069C77AB7539E5F6F405 /* Settings.bundle */; };
+		BC1377851C7132930010D11B /* BeltLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377841C7132930010D11B /* BeltLevel.swift */; };
+		BC1377871C7132A40010D11B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377861C7132A40010D11B /* Category.swift */; };
+		BC1377891C7132AB0010D11B /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377881C7132AB0010D11B /* Term.swift */; };
+		BC13778B1C7134430010D11B /* TopLevelDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */; };
 		BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ED4501C1490CC00960F09 /* AppDelegate.swift */; };
-		BC5ED4531C1490CC00960F09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ED4521C1490CC00960F09 /* ViewController.swift */; };
-		BC5ED4561C1490CC00960F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED4541C1490CC00960F09 /* Main.storyboard */; };
-		BC5ED4591C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC5ED4571C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodeld */; };
 		BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED45A1C1490CC00960F09 /* Assets.xcassets */; };
-		BC5ED45E1C1490CC00960F09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED45C1C1490CC00960F09 /* LaunchScreen.storyboard */; };
+		BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED4671C14979000960F09 /* KoreanTerms.plist */; };
+		BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BA902ED7A07B2FFBC7F45F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		4BA9030C289C89AC57916E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeltListViewController.swift; sourceTree = "<group>"; };
+		95D2069C77AB7539E5F6F405 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		BC1377841C7132930010D11B /* BeltLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeltLevel.swift; sourceTree = "<group>"; };
+		BC1377861C7132A40010D11B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BC1377881C7132AB0010D11B /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
+		BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelDeclarations.swift; sourceTree = "<group>"; };
 		BC5ED44D1C1490CC00960F09 /* TKD Korean Terms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TKD Korean Terms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5ED4501C1490CC00960F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC5ED4521C1490CC00960F09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BC5ED4551C1490CC00960F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BC5ED4581C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TKD_Korean_Terms.xcdatamodel; sourceTree = "<group>"; };
 		BC5ED45A1C1490CC00960F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BC5ED45D1C1490CC00960F09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5ED45F1C1490CC00960F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5ED4671C14979000960F09 /* KoreanTerms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KoreanTerms.plist; sourceTree = "<group>"; };
+		BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,13 +49,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		034A67C21E65BDC7EB93D82B /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		0360C813BB084FD3DDDDD2F4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		03DC3CB7E838B133FF0AED37 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1F0201AD2B4AD947FADF014E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		21B84B40647D895CCBCF420B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */,
+				BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2E02EA5C1B1352B8C7652C05 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03DC3CB7E838B133FF0AED37 /* Fonts */,
+				FB7D277AC41C2D7F5641C10A /* Data */,
+				0360C813BB084FD3DDDDD2F4 /* Images */,
+				95D2069C77AB7539E5F6F405 /* Settings.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		413EE4A6C763D1FBDD457315 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC1377841C7132930010D11B /* BeltLevel.swift */,
+				BC1377861C7132A40010D11B /* Category.swift */,
+				BC1377881C7132AB0010D11B /* Term.swift */,
+				BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BA900C7D4BB1CD5A84328AF /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				4BA90C9CC82405BA47EA2B98 /* Main.storyboard */,
+				4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */,
+			);
+			path = UserInterfaces;
+			sourceTree = "<group>";
+		};
+		5AFD8F531638C770CE86C25E /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		9E30036D22D5E8AC71608FBA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		BC5ED4441C1490CC00960F09 = {
 			isa = PBXGroup;
 			children = (
 				BC5ED44F1C1490CC00960F09 /* TKD Korean Terms */,
 				BC5ED44E1C1490CC00960F09 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
 		};
 		BC5ED44E1C1490CC00960F09 /* Products */ = {
 			isa = PBXGroup;
@@ -57,14 +154,34 @@
 			isa = PBXGroup;
 			children = (
 				BC5ED4501C1490CC00960F09 /* AppDelegate.swift */,
-				BC5ED4521C1490CC00960F09 /* ViewController.swift */,
-				BC5ED4541C1490CC00960F09 /* Main.storyboard */,
 				BC5ED45A1C1490CC00960F09 /* Assets.xcassets */,
-				BC5ED45C1C1490CC00960F09 /* LaunchScreen.storyboard */,
 				BC5ED45F1C1490CC00960F09 /* Info.plist */,
-				BC5ED4571C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodeld */,
+				9E30036D22D5E8AC71608FBA /* Categories */,
+				034A67C21E65BDC7EB93D82B /* ModelControllers */,
+				413EE4A6C763D1FBDD457315 /* Models */,
+				5AFD8F531638C770CE86C25E /* Theme */,
+				4BA900C7D4BB1CD5A84328AF /* UserInterfaces */,
+				21B84B40647D895CCBCF420B /* ViewControllers */,
+				1F0201AD2B4AD947FADF014E /* Views */,
+				FA7E8C0D07AC5D23DF08AE18 /* Vendor */,
+				2E02EA5C1B1352B8C7652C05 /* Resources */,
 			);
 			path = "TKD Korean Terms";
+			sourceTree = "<group>";
+		};
+		FA7E8C0D07AC5D23DF08AE18 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		FB7D277AC41C2D7F5641C10A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC5ED4671C14979000960F09 /* KoreanTerms.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +194,8 @@
 				BC5ED4491C1490CC00960F09 /* Sources */,
 				BC5ED44A1C1490CC00960F09 /* Frameworks */,
 				BC5ED44B1C1490CC00960F09 /* Resources */,
+				58CDF6B92B40E852B7280288 /* Warn for TODO and FIXME comments */,
+				CE7AF150EBE77BF341E8F327 /* Update build number */,
 			);
 			buildRules = (
 			);
@@ -125,42 +244,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5ED45E1C1490CC00960F09 /* LaunchScreen.storyboard in Resources */,
 				BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */,
-				BC5ED4561C1490CC00960F09 /* Main.storyboard in Resources */,
+				55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */,
+				BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */,
+				4BA909FF7E156DE6F8A0048F /* Main.storyboard in Resources */,
+				4BA90A9905B4D7F902BC4365 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58CDF6B92B40E852B7280288 /* Warn for TODO and FIXME comments */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Warn for TODO and FIXME comments";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		CE7AF150EBE77BF341E8F327 /* Update build number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update build number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"${TARGET_BUILD_DIR}\"\nbuildPlist=\"${TARGET_BUILD_DIR}\"/\"${INFOPLIST_PATH}\"\n\n# Increment the build number to match the git version\nsvnRevision=`git log --oneline | wc -l`\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $svnRevision\" \"$buildPlist\"\n\nbundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\")\nbundleShortVersionString=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\")\n\n# Update the Settings.bundle\nnewVersion=\"${bundleShortVersionString} (${bundleVersion})\"\n/usr/libexec/PlistBuddy \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\"/Settings.bundle/Root.plist -c \"set PreferenceSpecifiers:1:DefaultValue $newVersion\"\necho \"newVersion: ${newVersion}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC5ED4491C1490CC00960F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC5ED4591C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodeld in Sources */,
-				BC5ED4531C1490CC00960F09 /* ViewController.swift in Sources */,
 				BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */,
+				BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */,
+				4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */,
+				BC1377891C7132AB0010D11B /* Term.swift in Sources */,
+				BC1377851C7132930010D11B /* BeltLevel.swift in Sources */,
+				BC1377871C7132A40010D11B /* Category.swift in Sources */,
+				BC13778B1C7134430010D11B /* TopLevelDeclarations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BC5ED4541C1490CC00960F09 /* Main.storyboard */ = {
+		4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BC5ED4551C1490CC00960F09 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BC5ED45C1C1490CC00960F09 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BC5ED45D1C1490CC00960F09 /* Base */,
+				4BA9030C289C89AC57916E8F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4BA90C9CC82405BA47EA2B98 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA902ED7A07B2FFBC7F45F7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -197,10 +353,20 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -236,10 +402,20 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -254,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hairlessape.TKD-Korean-Terms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -265,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hairlessape.TKD-Korean-Terms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,21 +468,9 @@
 				BC5ED4641C1490CC00960F09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BC5ED4571C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BC5ED4581C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodel */,
-			);
-			currentVersion = BC5ED4581C1490CC00960F09 /* TKD_Korean_Terms.xcdatamodel */;
-			path = TKD_Korean_Terms.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BC5ED4451C1490CC00960F09 /* Project object */;
 }
