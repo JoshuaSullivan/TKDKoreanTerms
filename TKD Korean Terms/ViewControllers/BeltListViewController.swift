@@ -10,6 +10,10 @@ import UIKit
 
 class BeltListViewController: UITableViewController {
     
+    private struct SegueIdentifiers {
+        static let quiz = "ListToQuizSegueIdentifier"
+    }
+    
     var levels: [BeltLevel]!
     
     var selectedBeltLevel: BeltLevel?
@@ -28,7 +32,6 @@ class BeltListViewController: UITableViewController {
         }
         
         self.levels = levels.flatMap({ BeltLevel(dict: $0) }).sort({$0.level < $1.level})
-        print(levels)
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,15 +43,15 @@ class BeltListViewController: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        print(segue.identifier)
         guard let id = segue.identifier else { return }
         
         switch id {
-        case "ListToQuizSegueIdentifier":
+        case SegueIdentifiers.quiz:
             guard let
                 quizVC = segue.destinationViewController as? QuizViewController,
                 level = selectedBeltLevel
                 else {
+                    assertionFailure("Either the following view controller is the wrong type or the selectedBeltLevel is unset.")
                     return
             }
             quizVC.beltLevel = level
@@ -79,6 +82,7 @@ class BeltListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedBeltLevel = levels[indexPath.row]
+        self.performSegueWithIdentifier(SegueIdentifiers.quiz, sender: nil)
     }
     
 }

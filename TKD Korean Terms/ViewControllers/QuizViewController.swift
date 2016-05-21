@@ -16,5 +16,6 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationItem.title = beltLevel.name
+        print(allKoreanTerms)
     }
 }

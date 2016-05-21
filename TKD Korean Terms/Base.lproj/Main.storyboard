@@ -25,14 +25,11 @@
                                             <rect key="frame" x="15" y="0.0" width="550" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="GAc-Ab-uj7" kind="show" identifier="ListToQuizSegueIdentifier" id="mqS-oC-ZPU"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -43,6 +40,9 @@
                     <navigationItem key="navigationItem" title="Select Belt Level" id="cGe-4L-bT2">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Jt0-tH-2Jd"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="GAc-Ab-uj7" kind="show" identifier="ListToQuizSegueIdentifier" id="dBs-gJ-X5r"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VIy-8o-a2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

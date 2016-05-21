@@ -30,10 +30,8 @@ struct BeltLevel{
         self.name = name
         self.beltName = beltName
         if let catArr = dict["categories"] as? [DataDictionary] {
-            print("Found categories.")
             self.categories = catArr.flatMap{ Category(dict:$0) }
         } else {
-            print("\(beltName) has no categories.")
             self.categories = nil
         }
     }

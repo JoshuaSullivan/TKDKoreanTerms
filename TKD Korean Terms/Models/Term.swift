@@ -22,5 +22,6 @@ struct Term {
         }
         self.korean = korean
         self.english = english
+        allKoreanTerms.append(korean)
     }
 }
