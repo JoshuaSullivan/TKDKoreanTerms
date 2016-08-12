@@ -15,6 +15,13 @@ class QuizViewController: UIViewController {
     @IBOutlet private weak var languageLabel: UILabel!
     @IBOutlet private weak var termLabel: UILabel!
     
+    @IBOutlet private var buttons: [UIButton] = []
+    
+    private var terms: [Term] = []
+    private var index: Int = 0
+    
+    private var correctAnswer: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,11 +33,44 @@ class QuizViewController: UIViewController {
             return
         }
         
-        let terms = categories.flatMap {
+        terms = categories.flatMap({
             category in
             return category.terms
-        }
+        }).shuffled()
         
-        print(terms)
+        showNextTerm()
+    }
+    
+    private func showNextTerm() {
+        let term = terms[index]
+        termLabel.text = term.english
+        correctAnswer = term.korean
+        
+        let answers = generateAnswers(correctAnswer)
+        for (i, answer) in answers.enumerate() {
+            buttons[i].setTitle(answer, forState: .Normal)
+        }
+    }
+    
+    private func generateAnswers(correctAnswer: String) -> [String] {
+        var answers: [String] = [correctAnswer]
+        repeat {
+            let term = allKoreanTerms.randomElement()
+            if !answers.contains(term) {
+                answers.append(term)
+            }
+        } while (answers.count < buttons.count)
+        return answers.shuffled()
+    }
+    
+    @IBAction private func answerButtonTapped(button: UIButton) {
+        guard let term = button.titleLabel?.text else {
+            preconditionFailure("Unable to get button title.")
+        }
+        if term == correctAnswer {
+            debugPrint("Correct!")
+        } else {
+            debugPrint("Wrong!")
+        }
     }
 }

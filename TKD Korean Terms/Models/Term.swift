@@ -9,6 +9,7 @@
 import Foundation
 
 struct Term {
+    
     let korean: String
     let english: String
     
