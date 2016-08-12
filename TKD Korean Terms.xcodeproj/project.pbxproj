@@ -18,6 +18,7 @@
 		BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ED4501C1490CC00960F09 /* AppDelegate.swift */; };
 		BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED45A1C1490CC00960F09 /* Assets.xcassets */; };
 		BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED4671C14979000960F09 /* KoreanTerms.plist */; };
+		BC669AE21D5D70C60001BE2A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC669AE11D5D70C60001BE2A /* Array.swift */; };
 		BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		BC5ED45A1C1490CC00960F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5ED45F1C1490CC00960F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC5ED4671C14979000960F09 /* KoreanTerms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KoreanTerms.plist; sourceTree = "<group>"; };
+		BC669AE11D5D70C60001BE2A /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,11 +126,12 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		9E30036D22D5E8AC71608FBA /* Categories */ = {
+		9E30036D22D5E8AC71608FBA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BC669AE11D5D70C60001BE2A /* Array.swift */,
 			);
-			path = Categories;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BC5ED4441C1490CC00960F09 = {
@@ -156,7 +159,7 @@
 				BC5ED4501C1490CC00960F09 /* AppDelegate.swift */,
 				BC5ED45A1C1490CC00960F09 /* Assets.xcassets */,
 				BC5ED45F1C1490CC00960F09 /* Info.plist */,
-				9E30036D22D5E8AC71608FBA /* Categories */,
+				9E30036D22D5E8AC71608FBA /* Extensions */,
 				034A67C21E65BDC7EB93D82B /* ModelControllers */,
 				413EE4A6C763D1FBDD457315 /* Models */,
 				5AFD8F531638C770CE86C25E /* Theme */,
@@ -295,6 +298,7 @@
 				4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */,
 				BC1377891C7132AB0010D11B /* Term.swift in Sources */,
 				BC1377851C7132930010D11B /* BeltLevel.swift in Sources */,
+				BC669AE21D5D70C60001BE2A /* Array.swift in Sources */,
 				BC1377871C7132A40010D11B /* Category.swift in Sources */,
 				BC13778B1C7134430010D11B /* TopLevelDeclarations.swift in Sources */,
 			);
@@ -430,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hairlessape.TKD-Korean-Terms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hairlessape.TKD-Korean-Terms";
 				PRODUCT_NAME = "$(TARGET_NAME)";
