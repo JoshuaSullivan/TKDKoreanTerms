@@ -10,6 +10,14 @@ import UIKit
 
 class QuizViewController: UIViewController {
     
+    // MARK: Constants
+    
+    private let defaultColor: UIColor = UIColor.darkGrayColor()
+    private let correctColor: UIColor = UIColor(red: 0.0, green: 0.6, blue: 0.0, alpha: 1.0)
+    private let incorrectColor: UIColor = UIColor(red: 0.6, green: 0.0, blue: 0.0, alpha: 1.0)
+    
+    // MARK: - Properties
+    
     var beltLevel: BeltLevel!
     
     @IBOutlet private weak var languageLabel: UILabel!
@@ -42,6 +50,8 @@ class QuizViewController: UIViewController {
     }
     
     private func showNextTerm() {
+        resetButtonAppearance()
+        
         let term = terms[index]
         termLabel.text = term.english
         correctAnswer = term.korean
@@ -49,6 +59,12 @@ class QuizViewController: UIViewController {
         let answers = generateAnswers(correctAnswer)
         for (i, answer) in answers.enumerate() {
             buttons[i].setTitle(answer, forState: .Normal)
+        }
+        
+        index += 1
+        if index == terms.count {
+            terms = terms.shuffled()
+            index = 0
         }
     }
     
@@ -63,14 +79,43 @@ class QuizViewController: UIViewController {
         return answers.shuffled()
     }
     
+    private func resetButtonAppearance() {
+        buttons.forEach {
+            button in
+            button.alpha = 1.0
+            button.enabled = true
+            button.userInteractionEnabled = true
+            button.backgroundColor = defaultColor
+        }
+    }
+    
+    @objc private func nextQuestionTimerDidFire(timer: NSTimer) {
+        showNextTerm()
+    }
+    
     @IBAction private func answerButtonTapped(button: UIButton) {
-        guard let term = button.titleLabel?.text else {
-            preconditionFailure("Unable to get button title.")
+        
+        self.buttons.forEach { btn in
+            guard let term = btn.titleLabel?.text else {
+                preconditionFailure("Unable to get button title.")
+            }
+            let isCorrect = term == correctAnswer
+            if btn == button {
+                btn.backgroundColor = isCorrect ? correctColor : incorrectColor
+            }
+            if isCorrect {
+                btn.backgroundColor = correctColor
+                btn.userInteractionEnabled = false
+            } else {
+                btn.alpha = 0.5
+                btn.enabled = false
+            }
         }
-        if term == correctAnswer {
-            debugPrint("Correct!")
-        } else {
-            debugPrint("Wrong!")
-        }
+        
+        NSTimer.scheduledTimerWithTimeInterval(1.5,
+                                               target: self,
+                                               selector: #selector(nextQuestionTimerDidFire(_:)),
+                                               userInfo: nil,
+                                               repeats: false)
     }
 }
