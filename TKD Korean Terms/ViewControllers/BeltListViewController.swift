@@ -32,6 +32,10 @@ class BeltListViewController: UITableViewController {
         }
         
         self.levels = levels.flatMap({ BeltLevel(dict: $0) }).sort({$0.level < $1.level})
+        
+        let emptyView = UIView(frame: CGRect.zero)
+        self.tableView.tableFooterView = emptyView
+        self.tableView.separatorInset = UIEdgeInsetsZero
     }
     
     override func didReceiveMemoryWarning() {
@@ -75,6 +79,8 @@ class BeltListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("BeltCellReuseIdentifier", forIndexPath: indexPath)
         cell.textLabel?.text = beltLevel.beltName
         cell.imageView?.image = UIImage(named: beltLevel.icon)
+        cell.separatorInset = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsetsZero
         return cell
     }
     

@@ -103,10 +103,10 @@
 		413EE4A6C763D1FBDD457315 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */,
 				BC1377841C7132930010D11B /* BeltLevel.swift */,
 				BC1377861C7132A40010D11B /* Category.swift */,
 				BC1377881C7132AB0010D11B /* Term.swift */,
-				BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
