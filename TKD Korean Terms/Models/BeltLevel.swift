@@ -18,9 +18,9 @@ struct BeltLevel{
     init?(dict: DataDictionary) {
         guard let
             icon = dict["icon"] as? String,
-            level = dict["level"] as? Int,
-            name = dict["name"] as? String,
-            beltName = dict["beltLevel"] as? String
+            let level = dict["level"] as? Int,
+            let name = dict["name"] as? String,
+            let beltName = dict["beltLevel"] as? String
             else {
                 assertionFailure("Couldn't find all required properties.")
                 return nil

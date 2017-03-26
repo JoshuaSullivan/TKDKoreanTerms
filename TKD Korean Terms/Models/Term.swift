@@ -16,7 +16,7 @@ struct Term {
     init?(dict: DataDictionary) {
         guard let
         korean = dict["kr"] as? String,
-        english = dict["en"] as? String
+        let english = dict["en"] as? String
             else {
                 assertionFailure("Couldn't find all required properties.")
                 return nil

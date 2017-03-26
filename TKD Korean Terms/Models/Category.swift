@@ -15,7 +15,7 @@ struct Category {
     init?(dict: DataDictionary) {
         guard let
             name = dict["category"] as? String,
-            termArr = dict["terms"] as? [DataDictionary]
+            let termArr = dict["terms"] as? [DataDictionary]
             else {
                 assertionFailure("Couldn't find all required properties.")
                 return nil

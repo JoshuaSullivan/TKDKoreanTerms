@@ -10,7 +10,7 @@ import UIKit
 
 class BeltListViewController: UITableViewController {
     
-    private struct SegueIdentifiers {
+    fileprivate struct SegueIdentifiers {
         static let quiz = "ListToQuizSegueIdentifier"
     }
     
@@ -21,8 +21,8 @@ class BeltListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let dataURL = NSBundle.mainBundle().URLForResource("KoreanTerms", withExtension: "plist")!
-        guard let data = NSDictionary(contentsOfURL: dataURL) else {
+        let dataURL = Bundle.main.url(forResource: "KoreanTerms", withExtension: "plist")!
+        guard let data = NSDictionary(contentsOf: dataURL) else {
             assertionFailure("COULDN'T LOAD DATA!!!!")
             return
         }
@@ -31,11 +31,11 @@ class BeltListViewController: UITableViewController {
             return
         }
         
-        self.levels = levels.flatMap({ BeltLevel(dict: $0) }).sort({$0.level < $1.level})
+        self.levels = levels.flatMap({ BeltLevel(dict: $0) }).sorted(by: {$0.level < $1.level})
         
         let emptyView = UIView(frame: CGRect.zero)
         self.tableView.tableFooterView = emptyView
-        self.tableView.separatorInset = UIEdgeInsetsZero
+        self.tableView.separatorInset = UIEdgeInsets.zero
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,15 +45,15 @@ class BeltListViewController: UITableViewController {
     
     // Navigation
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let id = segue.identifier else { return }
         
         switch id {
         case SegueIdentifiers.quiz:
             guard let
-                quizVC = segue.destinationViewController as? QuizViewController,
-                level = selectedBeltLevel
+                quizVC = segue.destination as? QuizViewController,
+                let level = selectedBeltLevel
                 else {
                     assertionFailure("Either the following view controller is the wrong type or the selectedBeltLevel is unset.")
                     return
@@ -66,29 +66,29 @@ class BeltListViewController: UITableViewController {
     
     // UITableViewDataSource
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return levels.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let beltLevel = levels[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier("BeltCellReuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BeltCellReuseIdentifier", for: indexPath)
         cell.textLabel?.text = beltLevel.beltName
         cell.imageView?.image = UIImage(named: beltLevel.icon)
-        cell.separatorInset = UIEdgeInsetsZero
-        cell.layoutMargins = UIEdgeInsetsZero
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
         return cell
     }
     
     // UITableViewDelegate
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedBeltLevel = levels[indexPath.row]
-        self.performSegueWithIdentifier(SegueIdentifiers.quiz, sender: nil)
+        self.performSegue(withIdentifier: SegueIdentifiers.quiz, sender: nil)
     }
     
 }

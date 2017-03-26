@@ -12,23 +12,23 @@ class QuizViewController: UIViewController {
     
     // MARK: Constants
     
-    private let defaultColor: UIColor = UIColor.darkGrayColor()
-    private let correctColor: UIColor = UIColor(red: 0.0, green: 0.6, blue: 0.0, alpha: 1.0)
-    private let incorrectColor: UIColor = UIColor(red: 0.6, green: 0.0, blue: 0.0, alpha: 1.0)
+    fileprivate let defaultColor: UIColor = UIColor.darkGray
+    fileprivate let correctColor: UIColor = UIColor(red: 0.0, green: 0.6, blue: 0.0, alpha: 1.0)
+    fileprivate let incorrectColor: UIColor = UIColor(red: 0.6, green: 0.0, blue: 0.0, alpha: 1.0)
     
     // MARK: - Properties
     
     var beltLevel: BeltLevel!
     
-    @IBOutlet private weak var languageLabel: UILabel!
-    @IBOutlet private weak var termLabel: UILabel!
+    @IBOutlet fileprivate weak var languageLabel: UILabel!
+    @IBOutlet fileprivate weak var termLabel: UILabel!
     
-    @IBOutlet private var buttons: [UIButton] = []
+    @IBOutlet fileprivate var buttons: [UIButton] = []
     
-    private var terms: [Term] = []
-    private var index: Int = 0
+    fileprivate var terms: [Term] = []
+    fileprivate var index: Int = 0
     
-    private var correctAnswer: String = ""
+    fileprivate var correctAnswer: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ class QuizViewController: UIViewController {
         self.navigationItem.title = beltLevel.name
         
         guard let categories = beltLevel.categories else {
-            languageLabel.hidden = true
+            languageLabel.isHidden = true
             termLabel.text = NSLocalizedString("This belt level has no terms.", comment: "Warning when a belt level has no terms.")
             return
         }
@@ -49,7 +49,7 @@ class QuizViewController: UIViewController {
         showNextTerm()
     }
     
-    private func showNextTerm() {
+    fileprivate func showNextTerm() {
         resetButtonAppearance()
         
         let term = terms[index]
@@ -57,8 +57,8 @@ class QuizViewController: UIViewController {
         correctAnswer = term.korean
         
         let answers = generateAnswers(correctAnswer)
-        for (i, answer) in answers.enumerate() {
-            buttons[i].setTitle(answer, forState: .Normal)
+        for (i, answer) in answers.enumerated() {
+            buttons[i].setTitle(answer, for: UIControlState())
         }
         
         index += 1
@@ -68,7 +68,7 @@ class QuizViewController: UIViewController {
         }
     }
     
-    private func generateAnswers(correctAnswer: String) -> [String] {
+    fileprivate func generateAnswers(_ correctAnswer: String) -> [String] {
         var answers: [String] = [correctAnswer]
         repeat {
             let term = allKoreanTerms.randomElement()
@@ -79,21 +79,21 @@ class QuizViewController: UIViewController {
         return answers.shuffled()
     }
     
-    private func resetButtonAppearance() {
+    fileprivate func resetButtonAppearance() {
         buttons.forEach {
             button in
             button.alpha = 1.0
-            button.enabled = true
-            button.userInteractionEnabled = true
+            button.isEnabled = true
+            button.isUserInteractionEnabled = true
             button.backgroundColor = defaultColor
         }
     }
     
-    @objc private func nextQuestionTimerDidFire(timer: NSTimer) {
+    @objc fileprivate func nextQuestionTimerDidFire(_ timer: Timer) {
         showNextTerm()
     }
     
-    @IBAction private func answerButtonTapped(button: UIButton) {
+    @IBAction fileprivate func answerButtonTapped(_ button: UIButton) {
         
         self.buttons.forEach { btn in
             guard let term = btn.titleLabel?.text else {
@@ -105,14 +105,14 @@ class QuizViewController: UIViewController {
             }
             if isCorrect {
                 btn.backgroundColor = correctColor
-                btn.userInteractionEnabled = false
+                btn.isUserInteractionEnabled = false
             } else {
                 btn.alpha = 0.5
-                btn.enabled = false
+                btn.isEnabled = false
             }
         }
         
-        NSTimer.scheduledTimerWithTimeInterval(1.5,
+        Timer.scheduledTimer(timeInterval: 1.5,
                                                target: self,
                                                selector: #selector(nextQuestionTimerDidFire(_:)),
                                                userInfo: nil,
