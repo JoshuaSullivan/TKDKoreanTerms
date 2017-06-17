@@ -20,19 +20,8 @@ class BeltListViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        let dataURL = Bundle.main.url(forResource: "KoreanTerms", withExtension: "plist")!
-        guard let data = NSDictionary(contentsOf: dataURL) else {
-            assertionFailure("COULDN'T LOAD DATA!!!!")
-            return
-        }
-        guard let levels = data["beltLevels"] as? [DataDictionary] else {
-            assertionFailure("Couldn't find beltLevels in the data dictionary.")
-            return
-        }
-        
-        self.levels = levels.flatMap({ BeltLevel(dict: $0) }).sorted(by: {$0.level < $1.level})
-        
+
+        self.levels = TermsDataService.shared.levels
         let emptyView = UIView(frame: CGRect.zero)
         self.tableView.tableFooterView = emptyView
         self.tableView.separatorInset = UIEdgeInsets.zero

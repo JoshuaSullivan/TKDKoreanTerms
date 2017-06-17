@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */; };
-		4BA909FF7E156DE6F8A0048F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90C9CC82405BA47EA2B98 /* Main.storyboard */; };
+		4BA909FF7E156DE6F8A0048F /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */; };
 		4BA90A9905B4D7F902BC4365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */; };
 		55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95D2069C77AB7539E5F6F405 /* Settings.bundle */; };
 		BC1377851C7132930010D11B /* BeltLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377841C7132930010D11B /* BeltLevel.swift */; };
@@ -20,10 +20,15 @@
 		BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED4671C14979000960F09 /* KoreanTerms.plist */; };
 		BC669AE21D5D70C60001BE2A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC669AE11D5D70C60001BE2A /* Array.swift */; };
 		BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */; };
+		BCEC216E1E88146600686A80 /* FlashCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC216D1E88146600686A80 /* FlashCardsViewController.swift */; };
+		BCEC21701E88147100686A80 /* FlashCardsSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC216F1E88147100686A80 /* FlashCardsSetupViewController.swift */; };
+		BCEC21721E8831E200686A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC21711E8831E200686A80 /* Main.storyboard */; };
+		BCEC21741E883D4700686A80 /* FlashCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC21731E883D4700686A80 /* FlashCards.storyboard */; };
+		BCEC21791E8845D900686A80 /* TermsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC21781E8845D900686A80 /* TermsDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4BA902ED7A07B2FFBC7F45F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		4BA902ED7A07B2FFBC7F45F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/Quiz.storyboard"; sourceTree = SOURCE_ROOT; };
 		4BA9030C289C89AC57916E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
 		4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeltListViewController.swift; sourceTree = "<group>"; };
 		95D2069C77AB7539E5F6F405 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -38,6 +43,11 @@
 		BC5ED4671C14979000960F09 /* KoreanTerms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KoreanTerms.plist; sourceTree = "<group>"; };
 		BC669AE11D5D70C60001BE2A /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		BCEC216D1E88146600686A80 /* FlashCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardsViewController.swift; sourceTree = "<group>"; };
+		BCEC216F1E88147100686A80 /* FlashCardsSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardsSetupViewController.swift; sourceTree = "<group>"; };
+		BCEC21711E8831E200686A80 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BCEC21731E883D4700686A80 /* FlashCards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlashCards.storyboard; sourceTree = "<group>"; };
+		BCEC21781E8845D900686A80 /* TermsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 		1F0201AD2B4AD947FADF014E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BCEC217A1E884B0000686A80 /* FlashCards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -84,6 +95,8 @@
 			children = (
 				4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */,
 				BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */,
+				BCEC216F1E88147100686A80 /* FlashCardsSetupViewController.swift */,
+				BCEC216D1E88146600686A80 /* FlashCardsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,7 +127,9 @@
 		4BA900C7D4BB1CD5A84328AF /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				4BA90C9CC82405BA47EA2B98 /* Main.storyboard */,
+				BCEC21711E8831E200686A80 /* Main.storyboard */,
+				BCEC21731E883D4700686A80 /* FlashCards.storyboard */,
+				4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */,
 				4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */,
 			);
 			path = UserInterfaces;
@@ -162,6 +177,7 @@
 				9E30036D22D5E8AC71608FBA /* Extensions */,
 				034A67C21E65BDC7EB93D82B /* ModelControllers */,
 				413EE4A6C763D1FBDD457315 /* Models */,
+				BCEC21771E88456800686A80 /* Services */,
 				5AFD8F531638C770CE86C25E /* Theme */,
 				4BA900C7D4BB1CD5A84328AF /* UserInterfaces */,
 				21B84B40647D895CCBCF420B /* ViewControllers */,
@@ -170,6 +186,21 @@
 				2E02EA5C1B1352B8C7652C05 /* Resources */,
 			);
 			path = "TKD Korean Terms";
+			sourceTree = "<group>";
+		};
+		BCEC21771E88456800686A80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BCEC21781E8845D900686A80 /* TermsDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BCEC217A1E884B0000686A80 /* FlashCards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FlashCards;
 			sourceTree = "<group>";
 		};
 		FA7E8C0D07AC5D23DF08AE18 /* Vendor */ = {
@@ -226,7 +257,7 @@
 				};
 			};
 			buildConfigurationList = BC5ED4481C1490CC00960F09 /* Build configuration list for PBXProject "TKD Korean Terms" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -251,8 +282,10 @@
 				BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */,
 				55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */,
 				BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */,
-				4BA909FF7E156DE6F8A0048F /* Main.storyboard in Resources */,
+				BCEC21721E8831E200686A80 /* Main.storyboard in Resources */,
+				4BA909FF7E156DE6F8A0048F /* Quiz.storyboard in Resources */,
 				4BA90A9905B4D7F902BC4365 /* LaunchScreen.storyboard in Resources */,
+				BCEC21741E883D4700686A80 /* FlashCards.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,13 +328,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */,
+				BCEC216E1E88146600686A80 /* FlashCardsViewController.swift in Sources */,
 				BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */,
 				4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */,
 				BC1377891C7132AB0010D11B /* Term.swift in Sources */,
 				BC1377851C7132930010D11B /* BeltLevel.swift in Sources */,
 				BC669AE21D5D70C60001BE2A /* Array.swift in Sources */,
+				BCEC21791E8845D900686A80 /* TermsDataService.swift in Sources */,
 				BC1377871C7132A40010D11B /* Category.swift in Sources */,
 				BC13778B1C7134430010D11B /* TopLevelDeclarations.swift in Sources */,
+				BCEC21701E88147100686A80 /* FlashCardsSetupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,12 +352,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		4BA90C9CC82405BA47EA2B98 /* Main.storyboard */ = {
+		4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4BA902ED7A07B2FFBC7F45F7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Quiz.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -439,6 +475,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6VVBUBU9QC;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -452,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6VVBUBU9QC;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

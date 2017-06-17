@@ -14,12 +14,12 @@ struct Term {
     let english: String
     
     init?(dict: DataDictionary) {
-        guard let
-        korean = dict["kr"] as? String,
-        let english = dict["en"] as? String
-            else {
-                assertionFailure("Couldn't find all required properties.")
-                return nil
+        guard
+            let korean = dict["kr"] as? String,
+            let english = dict["en"] as? String
+        else {
+            assertionFailure("Couldn't find all required properties.")
+            return nil
         }
         self.korean = korean
         self.english = english
