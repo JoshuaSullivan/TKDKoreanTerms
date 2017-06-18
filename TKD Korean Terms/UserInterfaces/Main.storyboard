@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JGg-YY-Fr3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JGg-YY-Fr3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -30,21 +31,21 @@
         <scene sceneID="0SC-az-ziE">
             <objects>
                 <viewControllerPlaceholder storyboardName="Quiz" id="lgs-jc-QEZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="APE-RF-QSt"/>
+                    <tabBarItem key="tabBarItem" title="" systemItem="topRated" id="APE-RF-QSt"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeE-PD-XLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448" y="-425"/>
+            <point key="canvasLocation" x="416" y="-305"/>
         </scene>
         <!--FlashCards-->
         <scene sceneID="Ion-04-J5E">
             <objects>
                 <viewControllerPlaceholder storyboardName="FlashCards" id="H9p-io-XKR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7tX-Ri-iDm"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="7tX-Ri-iDm"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EwE-eR-efj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="480" y="-304"/>
+            <point key="canvasLocation" x="448" y="-143"/>
         </scene>
     </scenes>
 </document>

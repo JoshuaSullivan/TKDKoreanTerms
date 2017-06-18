@@ -85,7 +85,6 @@
 		1F0201AD2B4AD947FADF014E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BCEC217A1E884B0000686A80 /* FlashCards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,13 +193,6 @@
 				BCEC21781E8845D900686A80 /* TermsDataService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		BCEC217A1E884B0000686A80 /* FlashCards */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = FlashCards;
 			sourceTree = "<group>";
 		};
 		FA7E8C0D07AC5D23DF08AE18 /* Vendor */ = {

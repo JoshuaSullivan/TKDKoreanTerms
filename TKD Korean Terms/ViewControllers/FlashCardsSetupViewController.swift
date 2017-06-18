@@ -14,9 +14,14 @@ class FlashCardsSetupViewController: UIViewController {
     
     fileprivate var levels: [BeltLevel] = []
     
+    fileprivate var selectedBeltLevel: BeltLevel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         levels = TermsDataService.shared.levels
+        let emptyView = UIView(frame: CGRect.zero)
+        self.tableView.tableFooterView = emptyView
+        self.tableView.separatorInset = UIEdgeInsets.zero
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,15 +30,22 @@ class FlashCardsSetupViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showFlashCardsSegue" {
+            guard
+                let dest = segue.destination as? FlashCardsViewController,
+                let beltLevel = self.selectedBeltLevel
+            else {
+                assertionFailure("Unexpected configuration.")
+                return
+            }
+            dest.beltLevel = beltLevel
+        }
     }
-    */
     
 }
 
@@ -57,6 +69,8 @@ extension FlashCardsSetupViewController: UITableViewDataSource {
 
 extension FlashCardsSetupViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        debugPrint("selected: \(indexPath)")
+        selectedBeltLevel = levels[indexPath.row]
+        self.performSegue(withIdentifier: "showFlashCardsSegue", sender: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
