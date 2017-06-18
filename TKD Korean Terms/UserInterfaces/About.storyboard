@@ -63,7 +63,7 @@ Eden Prairie MN 55344</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIM-Fa-lVA">
-                                <rect key="frame" x="274" y="221.5" width="30" height="32"/>
+                                <rect key="frame" x="274" y="221" width="30" height="32"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
                                 <state key="normal" title="Call"/>
                                 <connections>
