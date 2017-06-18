@@ -76,7 +76,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Flash Cards" image="flashcards" id="zNF-17-DWX"/>
-                    <navigationItem key="navigationItem" title="Select Belt Level" id="flw-Qn-Fl7">
+                    <navigationItem key="navigationItem" title="Flash Cards - Select Belt Level" id="flw-Qn-Fl7">
                         <barButtonItem key="backBarButtonItem" title="Back" id="tbQ-hH-Fc9"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

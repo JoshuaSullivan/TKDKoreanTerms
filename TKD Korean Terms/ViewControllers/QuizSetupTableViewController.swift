@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QuizSetupTableViewController.swift
 //  TKD Korean Terms
 //
 //  Created by Joshua Sullivan on 12/6/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BeltListViewController: UITableViewController {
+class QuizSetupTableViewController: UITableViewController {
     
     fileprivate struct SegueIdentifiers {
         static let quiz = "ListToQuizSegueIdentifier"

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */; };
+		4BA903017C6C78574CA901FD /* QuizSetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA903DCA1E8E4212CA176EE /* QuizSetupTableViewController.swift */; };
 		4BA909FF7E156DE6F8A0048F /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */; };
 		4BA90A9905B4D7F902BC4365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */; };
 		55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95D2069C77AB7539E5F6F405 /* Settings.bundle */; };
@@ -15,6 +15,8 @@
 		BC1377871C7132A40010D11B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377861C7132A40010D11B /* Category.swift */; };
 		BC1377891C7132AB0010D11B /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377881C7132AB0010D11B /* Term.swift */; };
 		BC13778B1C7134430010D11B /* TopLevelDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */; };
+		BC24DAC91EF710AF00760772 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC24DAC81EF710AF00760772 /* About.storyboard */; };
+		BC24DACB1EF717F500760772 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24DACA1EF717F500760772 /* AboutViewController.swift */; };
 		BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ED4501C1490CC00960F09 /* AppDelegate.swift */; };
 		BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED45A1C1490CC00960F09 /* Assets.xcassets */; };
 		BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED4671C14979000960F09 /* KoreanTerms.plist */; };
@@ -30,12 +32,14 @@
 /* Begin PBXFileReference section */
 		4BA902ED7A07B2FFBC7F45F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/Quiz.storyboard"; sourceTree = SOURCE_ROOT; };
 		4BA9030C289C89AC57916E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
-		4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeltListViewController.swift; sourceTree = "<group>"; };
+		4BA903DCA1E8E4212CA176EE /* QuizSetupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizSetupTableViewController.swift; sourceTree = "<group>"; };
 		95D2069C77AB7539E5F6F405 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BC1377841C7132930010D11B /* BeltLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeltLevel.swift; sourceTree = "<group>"; };
 		BC1377861C7132A40010D11B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		BC1377881C7132AB0010D11B /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelDeclarations.swift; sourceTree = "<group>"; };
+		BC24DAC81EF710AF00760772 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		BC24DACA1EF717F500760772 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		BC5ED44D1C1490CC00960F09 /* TKD Korean Terms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TKD Korean Terms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5ED4501C1490CC00960F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5ED45A1C1490CC00960F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,10 +96,11 @@
 		21B84B40647D895CCBCF420B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */,
+				4BA903DCA1E8E4212CA176EE /* QuizSetupTableViewController.swift */,
 				BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */,
 				BCEC216F1E88147100686A80 /* FlashCardsSetupViewController.swift */,
 				BCEC216D1E88146600686A80 /* FlashCardsViewController.swift */,
+				BC24DACA1EF717F500760772 /* AboutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				BCEC21711E8831E200686A80 /* Main.storyboard */,
 				BCEC21731E883D4700686A80 /* FlashCards.storyboard */,
 				4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */,
+				BC24DAC81EF710AF00760772 /* About.storyboard */,
 				4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */,
 			);
 			path = UserInterfaces;
@@ -273,6 +279,7 @@
 			files = (
 				BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */,
 				55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */,
+				BC24DAC91EF710AF00760772 /* About.storyboard in Resources */,
 				BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */,
 				BCEC21721E8831E200686A80 /* Main.storyboard in Resources */,
 				4BA909FF7E156DE6F8A0048F /* Quiz.storyboard in Resources */,
@@ -322,9 +329,10 @@
 				BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */,
 				BCEC216E1E88146600686A80 /* FlashCardsViewController.swift in Sources */,
 				BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */,
-				4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */,
+				4BA903017C6C78574CA901FD /* QuizSetupTableViewController.swift in Sources */,
 				BC1377891C7132AB0010D11B /* Term.swift in Sources */,
 				BC1377851C7132930010D11B /* BeltLevel.swift in Sources */,
+				BC24DACB1EF717F500760772 /* AboutViewController.swift in Sources */,
 				BC669AE21D5D70C60001BE2A /* Array.swift in Sources */,
 				BCEC21791E8845D900686A80 /* TermsDataService.swift in Sources */,
 				BC1377871C7132A40010D11B /* Category.swift in Sources */,
