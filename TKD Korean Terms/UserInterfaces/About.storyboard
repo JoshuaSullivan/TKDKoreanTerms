@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GGO-Oq-344">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="6EE-i3-dAE">
+            <objects>
+                <viewController id="GGO-Oq-344" customClass="AboutViewController" customModule="TKD_Korean_Terms" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oGO-Aa-vhq"/>
+                        <viewControllerLayoutGuide type="bottom" id="i6j-Md-Wdi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aKV-cx-jcY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage" translatesAutoresizingMaskIntoConstraints="NO" id="6zP-aG-o6i">
+                                <rect key="frame" x="110" y="40" width="100" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6zP-aG-o6i" secondAttribute="height" multiplier="134:129" id="lnw-8q-xbD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Joshua Sullivan for the students of Master Moon's World Class Tae Kwon Do school." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqt-Xd-Eg9">
+                                <rect key="frame" x="16" y="151.5" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3f-2H-XdG">
+                                <rect key="frame" x="16" y="212.5" width="36" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZC-ZE-DzF">
+                                <rect key="frame" x="16" y="266.5" width="46.5" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaJ-dq-DSd">
+                                <rect key="frame" x="16" y="281" width="170" height="41"/>
+                                <string key="text">7916 Mitchell Road
+Eden Prairie MN 55344</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(952) 975-6000" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBD-0p-8Re">
+                                <rect key="frame" x="16" y="227" width="119" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIM-Fa-lVA">
+                                <rect key="frame" x="274" y="221" width="30" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <state key="normal" title="Call"/>
+                                <connections>
+                                    <action selector="callTappedWithSender:" destination="GGO-Oq-344" eventType="touchUpInside" id="oEJ-zw-2qD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvD-q3-uaa">
+                                <rect key="frame" x="272" y="285.5" width="32" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="mapTappedWithSender:" destination="GGO-Oq-344" eventType="touchUpInside" id="Cfs-Ik-tCV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWG-eN-SqH">
+                                <rect key="frame" x="16" y="342" width="46" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMk-fn-eqS">
+                                <rect key="frame" x="16" y="356.5" width="157" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <state key="normal" title="MasterMoonTKD.com"/>
+                                <connections>
+                                    <action selector="websiteTappedWithSender:" destination="GGO-Oq-344" eventType="touchUpInside" id="ukR-7m-n93"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRk-t5-kqr">
+                                <rect key="frame" x="90" y="449" width="140" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <state key="normal" title="Question about the app?"/>
+                                <connections>
+                                    <action selector="questionTappedWithSender:" destination="GGO-Oq-344" eventType="touchUpInside" id="SDw-yE-QGk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6zP-aG-o6i" firstAttribute="centerX" secondItem="aKV-cx-jcY" secondAttribute="centerX" id="0bW-Ej-VEu"/>
+                            <constraint firstItem="cMk-fn-eqS" firstAttribute="leading" secondItem="aKV-cx-jcY" secondAttribute="leadingMargin" id="7Yo-Gf-zO0"/>
+                            <constraint firstItem="3ZC-ZE-DzF" firstAttribute="top" secondItem="KBD-0p-8Re" secondAttribute="bottom" constant="20" id="7p8-Px-2KC"/>
+                            <constraint firstItem="kIM-Fa-lVA" firstAttribute="baseline" secondItem="KBD-0p-8Re" secondAttribute="baseline" id="7qm-tM-5zq"/>
+                            <constraint firstItem="6zP-aG-o6i" firstAttribute="height" secondItem="aKV-cx-jcY" secondAttribute="height" multiplier="0.2" id="8FI-tv-RYX"/>
+                            <constraint firstItem="OaJ-dq-DSd" firstAttribute="leading" secondItem="aKV-cx-jcY" secondAttribute="leadingMargin" id="E0d-DX-8tR"/>
+                            <constraint firstItem="6zP-aG-o6i" firstAttribute="top" secondItem="oGO-Aa-vhq" secondAttribute="bottom" constant="20" id="FaV-wF-svf"/>
+                            <constraint firstItem="tvD-q3-uaa" firstAttribute="trailing" secondItem="aKV-cx-jcY" secondAttribute="trailingMargin" id="G6E-g6-98a"/>
+                            <constraint firstItem="Q3f-2H-XdG" firstAttribute="leading" secondItem="aKV-cx-jcY" secondAttribute="leadingMargin" id="Nsq-SL-JJ9"/>
+                            <constraint firstItem="KBD-0p-8Re" firstAttribute="leading" secondItem="aKV-cx-jcY" secondAttribute="leadingMargin" id="ToU-fX-aAr"/>
+                            <constraint firstItem="i6j-Md-Wdi" firstAttribute="top" secondItem="dRk-t5-kqr" secondAttribute="bottom" constant="4" id="Y20-gW-71q"/>
+                            <constraint firstItem="Q3f-2H-XdG" firstAttribute="top" secondItem="Iqt-Xd-Eg9" secondAttribute="bottom" constant="40" id="Ym5-4L-7Wf"/>
+                            <constraint firstItem="PWG-eN-SqH" firstAttribute="top" secondItem="OaJ-dq-DSd" secondAttribute="bottom" constant="20" id="cL4-mL-Pnk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iqt-Xd-Eg9" secondAttribute="trailing" id="drm-Z1-MRm"/>
+                            <constraint firstItem="3ZC-ZE-DzF" firstAttribute="leading" secondItem="aKV-cx-jcY" secondAttribute="leadingMargin" id="eSx-gg-ZM9"/>
+                            <constraint firstItem="tvD-q3-uaa" firstAttribute="centerY" secondItem="OaJ-dq-DSd" secondAttribute="centerY" id="hvR-7B-FlU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kIM-Fa-lVA" secondAttribute="trailing" id="kLX-hg-kFl"/>
+                            <constraint firstItem="OaJ-dq-DSd" firstAttribute="top" secondItem="3ZC-ZE-DzF" secondAttribute="bottom" id="okO-Go-dcx"/>
+                            <constraint firstItem="Iqt-Xd-Eg9" firstAttribute="leading" secondItem="aKV-cx-jcY" secondAttribute="leadingMargin" id="ppB-G4-Egl"/>
+                            <constraint firstItem="Iqt-Xd-Eg9" firstAttribute="top" secondItem="6zP-aG-o6i" secondAttribute="bottom" constant="16" id="vfI-is-Geu"/>
+                            <constraint firstItem="dRk-t5-kqr" firstAttribute="centerX" secondItem="aKV-cx-jcY" secondAttribute="centerX" id="vqk-BY-78V"/>
+                            <constraint firstItem="cMk-fn-eqS" firstAttribute="top" secondItem="PWG-eN-SqH" secondAttribute="bottom" id="yeJ-e2-vdD"/>
+                            <constraint firstItem="KBD-0p-8Re" firstAttribute="top" secondItem="Q3f-2H-XdG" secondAttribute="bottom" id="zlJ-Ak-y9E"/>
+                            <constraint firstItem="PWG-eN-SqH" firstAttribute="leading" secondItem="aKV-cx-jcY" secondAttribute="leadingMargin" id="zy9-9t-Jxb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="KHd-0L-RCe" userLabel="About"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ln-Lb-U6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518.84057971014499" y="-146.73913043478262"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchImage" width="268" height="258"/>
+        <image name="about" width="25" height="25"/>
+    </resources>
+</document>

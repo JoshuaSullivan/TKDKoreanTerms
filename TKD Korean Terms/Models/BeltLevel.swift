@@ -18,9 +18,9 @@ struct BeltLevel{
     init?(dict: DataDictionary) {
         guard let
             icon = dict["icon"] as? String,
-            level = dict["level"] as? Int,
-            name = dict["name"] as? String,
-            beltName = dict["beltLevel"] as? String
+            let level = dict["level"] as? Int,
+            let name = dict["name"] as? String,
+            let beltName = dict["beltLevel"] as? String
             else {
                 assertionFailure("Couldn't find all required properties.")
                 return nil
@@ -30,10 +30,8 @@ struct BeltLevel{
         self.name = name
         self.beltName = beltName
         if let catArr = dict["categories"] as? [DataDictionary] {
-            print("Found categories.")
             self.categories = catArr.flatMap{ Category(dict:$0) }
         } else {
-            print("\(beltName) has no categories.")
             self.categories = nil
         }
     }

@@ -3,39 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */; };
-		4BA909FF7E156DE6F8A0048F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90C9CC82405BA47EA2B98 /* Main.storyboard */; };
+		4BA903017C6C78574CA901FD /* QuizSetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA903DCA1E8E4212CA176EE /* QuizSetupTableViewController.swift */; };
+		4BA909FF7E156DE6F8A0048F /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */; };
 		4BA90A9905B4D7F902BC4365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */; };
 		55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95D2069C77AB7539E5F6F405 /* Settings.bundle */; };
 		BC1377851C7132930010D11B /* BeltLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377841C7132930010D11B /* BeltLevel.swift */; };
 		BC1377871C7132A40010D11B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377861C7132A40010D11B /* Category.swift */; };
 		BC1377891C7132AB0010D11B /* Term.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1377881C7132AB0010D11B /* Term.swift */; };
 		BC13778B1C7134430010D11B /* TopLevelDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */; };
+		BC24DAC91EF710AF00760772 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC24DAC81EF710AF00760772 /* About.storyboard */; };
+		BC24DACB1EF717F500760772 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC24DACA1EF717F500760772 /* AboutViewController.swift */; };
 		BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5ED4501C1490CC00960F09 /* AppDelegate.swift */; };
 		BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED45A1C1490CC00960F09 /* Assets.xcassets */; };
 		BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC5ED4671C14979000960F09 /* KoreanTerms.plist */; };
+		BC669AE21D5D70C60001BE2A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC669AE11D5D70C60001BE2A /* Array.swift */; };
 		BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */; };
+		BCEC216E1E88146600686A80 /* FlashCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC216D1E88146600686A80 /* FlashCardsViewController.swift */; };
+		BCEC21701E88147100686A80 /* FlashCardsSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC216F1E88147100686A80 /* FlashCardsSetupViewController.swift */; };
+		BCEC21721E8831E200686A80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC21711E8831E200686A80 /* Main.storyboard */; };
+		BCEC21741E883D4700686A80 /* FlashCards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEC21731E883D4700686A80 /* FlashCards.storyboard */; };
+		BCEC21791E8845D900686A80 /* TermsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEC21781E8845D900686A80 /* TermsDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4BA902ED7A07B2FFBC7F45F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		4BA902ED7A07B2FFBC7F45F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/Quiz.storyboard"; sourceTree = SOURCE_ROOT; };
 		4BA9030C289C89AC57916E8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TKD Korean Terms/Base.lproj/LaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
-		4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeltListViewController.swift; sourceTree = "<group>"; };
+		4BA903DCA1E8E4212CA176EE /* QuizSetupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizSetupTableViewController.swift; sourceTree = "<group>"; };
 		95D2069C77AB7539E5F6F405 /* Settings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		BC1377841C7132930010D11B /* BeltLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeltLevel.swift; sourceTree = "<group>"; };
 		BC1377861C7132A40010D11B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		BC1377881C7132AB0010D11B /* Term.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Term.swift; sourceTree = "<group>"; };
 		BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelDeclarations.swift; sourceTree = "<group>"; };
+		BC24DAC81EF710AF00760772 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		BC24DACA1EF717F500760772 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BC57E1F91EF816D900BE5817 /* TKD Korean Terms.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TKD Korean Terms.entitlements"; sourceTree = "<group>"; };
 		BC5ED44D1C1490CC00960F09 /* TKD Korean Terms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TKD Korean Terms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5ED4501C1490CC00960F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5ED45A1C1490CC00960F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BC5ED45F1C1490CC00960F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5ED45F1C1490CC00960F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		BC5ED4671C14979000960F09 /* KoreanTerms.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KoreanTerms.plist; sourceTree = "<group>"; };
+		BC669AE11D5D70C60001BE2A /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		BCEC216D1E88146600686A80 /* FlashCardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardsViewController.swift; sourceTree = "<group>"; };
+		BCEC216F1E88147100686A80 /* FlashCardsSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashCardsSetupViewController.swift; sourceTree = "<group>"; };
+		BCEC21711E8831E200686A80 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BCEC21731E883D4700686A80 /* FlashCards.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FlashCards.storyboard; sourceTree = "<group>"; };
+		BCEC21781E8845D900686A80 /* TermsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +97,11 @@
 		21B84B40647D895CCBCF420B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4BA903DCA1E8E4212CA176EE /* BeltListViewController.swift */,
+				4BA903DCA1E8E4212CA176EE /* QuizSetupTableViewController.swift */,
 				BCC85CEF1CF08C320008ECC4 /* QuizViewController.swift */,
+				BCEC216F1E88147100686A80 /* FlashCardsSetupViewController.swift */,
+				BCEC216D1E88146600686A80 /* FlashCardsViewController.swift */,
+				BC24DACA1EF717F500760772 /* AboutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -89,6 +109,7 @@
 		2E02EA5C1B1352B8C7652C05 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BC5ED45F1C1490CC00960F09 /* Info.plist */,
 				03DC3CB7E838B133FF0AED37 /* Fonts */,
 				FB7D277AC41C2D7F5641C10A /* Data */,
 				0360C813BB084FD3DDDDD2F4 /* Images */,
@@ -100,10 +121,10 @@
 		413EE4A6C763D1FBDD457315 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */,
 				BC1377841C7132930010D11B /* BeltLevel.swift */,
 				BC1377861C7132A40010D11B /* Category.swift */,
 				BC1377881C7132AB0010D11B /* Term.swift */,
-				BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,7 +132,10 @@
 		4BA900C7D4BB1CD5A84328AF /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				4BA90C9CC82405BA47EA2B98 /* Main.storyboard */,
+				BCEC21711E8831E200686A80 /* Main.storyboard */,
+				BCEC21731E883D4700686A80 /* FlashCards.storyboard */,
+				4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */,
+				BC24DAC81EF710AF00760772 /* About.storyboard */,
 				4BA90A2D042DC1DD9AA6B1C5 /* LaunchScreen.storyboard */,
 			);
 			path = UserInterfaces;
@@ -124,11 +148,19 @@
 			path = Theme;
 			sourceTree = "<group>";
 		};
-		9E30036D22D5E8AC71608FBA /* Categories */ = {
+		9E30036D22D5E8AC71608FBA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC669AE11D5D70C60001BE2A /* Array.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BC24DACC1EF73D3600760772 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Categories;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BC5ED4441C1490CC00960F09 = {
@@ -136,6 +168,7 @@
 			children = (
 				BC5ED44F1C1490CC00960F09 /* TKD Korean Terms */,
 				BC5ED44E1C1490CC00960F09 /* Products */,
+				BC24DACC1EF73D3600760772 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -153,12 +186,13 @@
 		BC5ED44F1C1490CC00960F09 /* TKD Korean Terms */ = {
 			isa = PBXGroup;
 			children = (
+				BC57E1F91EF816D900BE5817 /* TKD Korean Terms.entitlements */,
 				BC5ED4501C1490CC00960F09 /* AppDelegate.swift */,
 				BC5ED45A1C1490CC00960F09 /* Assets.xcassets */,
-				BC5ED45F1C1490CC00960F09 /* Info.plist */,
-				9E30036D22D5E8AC71608FBA /* Categories */,
+				9E30036D22D5E8AC71608FBA /* Extensions */,
 				034A67C21E65BDC7EB93D82B /* ModelControllers */,
 				413EE4A6C763D1FBDD457315 /* Models */,
+				BCEC21771E88456800686A80 /* Services */,
 				5AFD8F531638C770CE86C25E /* Theme */,
 				4BA900C7D4BB1CD5A84328AF /* UserInterfaces */,
 				21B84B40647D895CCBCF420B /* ViewControllers */,
@@ -167,6 +201,14 @@
 				2E02EA5C1B1352B8C7652C05 /* Resources */,
 			);
 			path = "TKD Korean Terms";
+			sourceTree = "<group>";
+		};
+		BCEC21771E88456800686A80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BCEC21781E8845D900686A80 /* TermsDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		FA7E8C0D07AC5D23DF08AE18 /* Vendor */ = {
@@ -213,16 +255,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Joshua Sullivan";
 				TargetAttributes = {
 					BC5ED44C1C1490CC00960F09 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
 			buildConfigurationList = BC5ED4481C1490CC00960F09 /* Build configuration list for PBXProject "TKD Korean Terms" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -246,9 +298,12 @@
 			files = (
 				BC5ED45B1C1490CC00960F09 /* Assets.xcassets in Resources */,
 				55D9A7E3C7E65B4D834803B0 /* Settings.bundle in Resources */,
+				BC24DAC91EF710AF00760772 /* About.storyboard in Resources */,
 				BC5ED4681C14979000960F09 /* KoreanTerms.plist in Resources */,
-				4BA909FF7E156DE6F8A0048F /* Main.storyboard in Resources */,
+				BCEC21721E8831E200686A80 /* Main.storyboard in Resources */,
+				4BA909FF7E156DE6F8A0048F /* Quiz.storyboard in Resources */,
 				4BA90A9905B4D7F902BC4365 /* LaunchScreen.storyboard in Resources */,
+				BCEC21741E883D4700686A80 /* FlashCards.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +346,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC5ED4511C1490CC00960F09 /* AppDelegate.swift in Sources */,
+				BCEC216E1E88146600686A80 /* FlashCardsViewController.swift in Sources */,
 				BCC85CF01CF08C320008ECC4 /* QuizViewController.swift in Sources */,
-				4BA903017C6C78574CA901FD /* BeltListViewController.swift in Sources */,
+				4BA903017C6C78574CA901FD /* QuizSetupTableViewController.swift in Sources */,
 				BC1377891C7132AB0010D11B /* Term.swift in Sources */,
 				BC1377851C7132930010D11B /* BeltLevel.swift in Sources */,
+				BC24DACB1EF717F500760772 /* AboutViewController.swift in Sources */,
+				BC669AE21D5D70C60001BE2A /* Array.swift in Sources */,
+				BCEC21791E8845D900686A80 /* TermsDataService.swift in Sources */,
 				BC1377871C7132A40010D11B /* Category.swift in Sources */,
 				BC13778B1C7134430010D11B /* TopLevelDeclarations.swift in Sources */,
+				BCEC21701E88147100686A80 /* FlashCardsSetupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,12 +371,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		4BA90C9CC82405BA47EA2B98 /* Main.storyboard */ = {
+		4BA90C9CC82405BA47EA2B98 /* Quiz.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4BA902ED7A07B2FFBC7F45F7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Quiz.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -330,13 +390,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -368,7 +436,7 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,13 +453,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -417,9 +493,10 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -429,11 +506,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VVBUBU9QC;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hairlessape.TKD-Korean-Terms";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hairlessape.TKDKoreanTerms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -441,11 +525,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VVBUBU9QC;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hairlessape.TKD-Korean-Terms";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hairlessape.TKDKoreanTerms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

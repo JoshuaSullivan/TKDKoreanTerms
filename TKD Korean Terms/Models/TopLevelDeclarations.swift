@@ -9,3 +9,5 @@
 import Foundation
 
 typealias DataDictionary = [String : AnyObject]
+
+var allKoreanTerms: [String] = []
