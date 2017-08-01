@@ -40,6 +40,7 @@
 		BC13778A1C7134430010D11B /* TopLevelDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopLevelDeclarations.swift; sourceTree = "<group>"; };
 		BC24DAC81EF710AF00760772 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		BC24DACA1EF717F500760772 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BC57E1F91EF816D900BE5817 /* TKD Korean Terms.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TKD Korean Terms.entitlements"; sourceTree = "<group>"; };
 		BC5ED44D1C1490CC00960F09 /* TKD Korean Terms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TKD Korean Terms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5ED4501C1490CC00960F09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5ED45A1C1490CC00960F09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -155,11 +156,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BC24DACC1EF73D3600760772 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC5ED4441C1490CC00960F09 = {
 			isa = PBXGroup;
 			children = (
 				BC5ED44F1C1490CC00960F09 /* TKD Korean Terms */,
 				BC5ED44E1C1490CC00960F09 /* Products */,
+				BC24DACC1EF73D3600760772 /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -177,6 +186,7 @@
 		BC5ED44F1C1490CC00960F09 /* TKD Korean Terms */ = {
 			isa = PBXGroup;
 			children = (
+				BC57E1F91EF816D900BE5817 /* TKD Korean Terms.entitlements */,
 				BC5ED4501C1490CC00960F09 /* AppDelegate.swift */,
 				BC5ED45A1C1490CC00960F09 /* Assets.xcassets */,
 				9E30036D22D5E8AC71608FBA /* Extensions */,
@@ -251,6 +261,15 @@
 					BC5ED44C1C1490CC00960F09 = {
 						CreatedOnToolsVersion = 7.1.1;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -487,14 +506,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VVBUBU9QC;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hairlessape.TKDKoreanTerms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -502,14 +525,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6VVBUBU9QC;
 				INFOPLIST_FILE = "TKD Korean Terms/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hairlessape.TKDKoreanTerms;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
